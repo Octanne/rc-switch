@@ -36,11 +36,12 @@
     #include "Energia.h"
 #elif defined(RPI) // Raspberry Pi
     #define RaspberryPi
-
     // Include libraries for RPi:
     #include <string.h> /* memcpy */
     #include <stdlib.h> /* abs */
     #include <wiringPi.h>
+    #include <driver/gpio.h>
+    #include <esp_timer.h>
 #elif defined(SPARK)
     #include "application.h"
 #else
